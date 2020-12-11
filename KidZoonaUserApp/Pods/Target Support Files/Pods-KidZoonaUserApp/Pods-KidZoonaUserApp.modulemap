@@ -1,0 +1,6 @@
+framework module Pods_KidZoonaUserApp {
+  umbrella header "Pods-KidZoonaUserApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

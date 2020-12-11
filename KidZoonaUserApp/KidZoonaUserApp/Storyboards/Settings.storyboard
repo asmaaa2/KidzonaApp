@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AY7-JW-n0N">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="HcR-cQ-Yh4">
+            <objects>
+                <viewController storyboardIdentifier="SettingsView" id="AY7-JW-n0N" customClass="SettingsViewController" customModule="KidZoonaUserApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bXm-Pw-e9e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="jjO-DO-ItE">
+                                <rect key="frame" x="32" y="68" width="102" height="35"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-profile-icon" translatesAutoresizingMaskIntoConstraints="NO" id="zNw-2p-VZa">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="gvC-VS-k06"/>
+                                            <constraint firstAttribute="width" constant="30" id="pGL-Je-fvh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyS-wd-Nsu">
+                                        <rect key="frame" x="48" y="0.0" width="54" height="35"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Profile">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="profileBtnAction:" destination="AY7-JW-n0N" eventType="touchUpInside" id="mR5-Mp-zm0"/>
+                                            <segue destination="acy-gZ-Yit" kind="show" id="3B9-WF-BST"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vyS-wd-Nsu" firstAttribute="height" secondItem="zNw-2p-VZa" secondAttribute="height" id="Qo3-50-lvA"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line sections" translatesAutoresizingMaskIntoConstraints="NO" id="kuL-lr-uhz">
+                                <rect key="frame" x="0.0" y="115" width="375" height="1"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1nV-kc-1HH">
+                                <rect key="frame" x="24" y="128" width="130" height="35"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-log-out-icon" translatesAutoresizingMaskIntoConstraints="NO" id="qJL-n2-LqE">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="LD8-eB-X6l"/>
+                                            <constraint firstAttribute="width" constant="45" id="PCc-Ly-02x"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzc-6W-0VF">
+                                        <rect key="frame" x="60" y="0.0" width="70" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="4cR-zm-9rv"/>
+                                            <constraint firstAttribute="height" constant="35" id="wN7-ND-vPy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Log Out">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logOutAction:" destination="AY7-JW-n0N" eventType="touchUpInside" id="9wy-Fz-u9E"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line sections" translatesAutoresizingMaskIntoConstraints="NO" id="ThS-Kf-sIz">
+                                <rect key="frame" x="0.0" y="175" width="375" height="1"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kuL-lr-uhz" firstAttribute="centerX" secondItem="Mp0-G7-V0E" secondAttribute="centerX" id="0hV-3e-jtn"/>
+                            <constraint firstItem="1nV-kc-1HH" firstAttribute="top" secondItem="kuL-lr-uhz" secondAttribute="bottom" constant="12" id="EUL-Kv-i5s"/>
+                            <constraint firstItem="1nV-kc-1HH" firstAttribute="leading" secondItem="Mp0-G7-V0E" secondAttribute="leading" constant="24" id="P41-uc-y2R"/>
+                            <constraint firstItem="jjO-DO-ItE" firstAttribute="leading" secondItem="Mp0-G7-V0E" secondAttribute="leading" constant="32" id="VmI-NK-nPK"/>
+                            <constraint firstItem="ThS-Kf-sIz" firstAttribute="top" secondItem="1nV-kc-1HH" secondAttribute="bottom" constant="12" id="dOY-3g-ggT"/>
+                            <constraint firstItem="ThS-Kf-sIz" firstAttribute="centerX" secondItem="Mp0-G7-V0E" secondAttribute="centerX" id="eWP-WN-fEV"/>
+                            <constraint firstItem="kuL-lr-uhz" firstAttribute="top" secondItem="jjO-DO-ItE" secondAttribute="bottom" constant="12" id="feV-D8-CrF"/>
+                            <constraint firstItem="kuL-lr-uhz" firstAttribute="leading" secondItem="Mp0-G7-V0E" secondAttribute="leading" id="tH6-sH-QsO"/>
+                            <constraint firstItem="jjO-DO-ItE" firstAttribute="top" secondItem="Mp0-G7-V0E" secondAttribute="top" constant="48" id="wNX-E2-UUL"/>
+                            <constraint firstItem="ThS-Kf-sIz" firstAttribute="leading" secondItem="Mp0-G7-V0E" secondAttribute="leading" id="xda-xD-lbk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mp0-G7-V0E"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="setting tab bar" id="fbB-wU-Odg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="logOutLayout" destination="tzc-6W-0VF" id="UtT-rJ-Mvj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruU-kv-uJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="-73.313343328335833"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="dPT-L7-i8Z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileVC" id="acy-gZ-Yit" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HqM-cR-QW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2481" y="-309"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="green-log-out-icon" width="24" height="24"/>
+        <image name="green-profile-icon" width="24" height="24"/>
+        <image name="line sections" width="342" height="1"/>
+        <image name="setting tab bar" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,17 @@
+platform :ios, '9.0'
+use_frameworks!
+target 'KidZoonaUserApp' do
+pod 'Cosmos', '~> 20.0'
+
+  # Pods for Login
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  pod 'AppAuth','~> 1.2.0'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'SDWebImage', '~> 5.0'
+  pod 'Kingfisher', '~> 4.0'
+end

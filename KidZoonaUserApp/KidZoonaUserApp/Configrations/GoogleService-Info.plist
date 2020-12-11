@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>56616756055-8uo55mjg1trgbgu4gfo44u3sod764uei.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.56616756055-8uo55mjg1trgbgu4gfo44u3sod764uei</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC-Ey6gE3_ZvWfGHIvJVFBgNSgUKszY84Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>56616756055</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ITIIntake40.KidZoonaUserApp</string>
+	<key>PROJECT_ID</key>
+	<string>kidzoona-57017</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kidzoona-57017.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:56616756055:ios:ce777b9a4dba50273dd412</string>
+	<key>DATABASE_URL</key>
+	<string>https://kidzoona-57017.firebaseio.com</string>
+</dict>
+</plist>
